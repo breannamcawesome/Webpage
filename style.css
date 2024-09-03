@@ -1,0 +1,24 @@
+body{
+    font: Roboto, sans-serif;
+}
+
+.header, .content, .footer{
+    background-color: #1F2937;
+}
+
+.header{
+    color: #F9FAF8;
+}
+
+.header:link{
+    color: #E5E7EB;
+}
+
+.container{
+    color: #1F2937;
+}
+
+.container2{
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
