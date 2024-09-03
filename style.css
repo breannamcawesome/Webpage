@@ -1,5 +1,7 @@
 body{
-    font: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .header, .content, .footer{
@@ -8,17 +10,68 @@ body{
 
 .header{
     color: #F9FAF8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.header:link{
+.header-title{
+    font-size: 24px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.header:link, .topcontainer{
     color: #E5E7EB;
+    font-size: 18px;
 }
 
 .container{
     color: #1F2937;
+    display: flex;
+    flex-direction: column;
 }
 
 .container2{
-    background-color: #E5E7EB;
+    background-color: white;
     color: #1F2937;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-container{
+    background-color: #E5E7EB;
+    font-family: "Roboto-light", sans-serif;
+    font-style: italic;
+    display: flex;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+}
+
+.container3, button{
+    background-color: #3882F6;
+}
+
+.footer{
+    display: flex;
+}
+
+.square-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.square{
+    border: 3px;
+    border-color: #1F2937;
+    width: 100px;
+    height: 100px;
 }
