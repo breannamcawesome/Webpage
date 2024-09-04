@@ -17,10 +17,12 @@ body{
     flex: 0 0 auto;
     padding: 0 20;
     align-items: center;
+    padding: 2% 10%;
 }
 
 .header-title{
     font-size: 24px;
+    font-weight: 700;
 }
 
 
@@ -33,33 +35,53 @@ body{
 
 .topcontainer{
     display: flex;
-    justify-content: space-around;
-    align-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
+    color: #E5E7EB;
+    font-size: 14px;
+    padding: 2% 10%;
 }
 
 .intro-text{
+    display: flex;
     font-weight: bold;
     font-size: 40px;
     flex-wrap: wrap;
+    width: 80%;
+    padding: 8px;
+    flex: 1;
+    flex-direction: column;
 }
 
-.img{
-    display: flex;
-    border: 2px darkgray;
-    background-color: gray;
-    justify-content: flex-end;
-    align-self: center;
+.intro-text > button{
+    justify-content: flex-start;
+    width: 50%;
 }
+
+.head-img{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 200px;
+    margin: 25px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    flex: 3;
+}
+
 
 .header-blurb{
+    font-weight: normal;
+    font-size: 14px;
     display: flex;
     justify-content: flex-start;
-    width: 25%;
+    flex: 1;
+    flex-direction: column;
+    width: 80%;
 }
 
-.link, .topcontainer{
+.link{
     color: #E5E7EB;
     font-size: 14px;
     padding: 8px;
@@ -81,6 +103,14 @@ body{
     font-size: 48px;
 }
 
+.container2-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
 .container2{
     background-color: white;
     color: #1F2937;
@@ -96,9 +126,17 @@ body{
     font-family: "Roboto-light", sans-serif;
     font-style: italic;
     display: flex;
-    justify-content: flex-end;
     padding: 15px 20px 15px 20px;
     flex-grow: 4;
+    flex-direction: column;
+}
+
+.quote{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .container3{
@@ -111,25 +149,65 @@ body{
 }
 
 .action{
+    color: #F9FAF8;
+    background-color: #3882F6;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 15px;
-    width: 70%;
+    flex-wrap: wrap;
     height: 10%;
+    width: 60%;
     margin: 5px;
-
+    padding: 20px;
+    border-radius: 9px;
+    row-gap: 10px;
+    column-gap: 2em;
 }
 
+.action-title{
+    font-weight: 600;
+    display: flex;
+    padding: 4px;
+}
 
-.action, button{
+.action-blurb{
+    font-size: 14px;
+    display: flex;
+    padding: 4px;
+}
+
+.action > .action-blurb, button{
+    display: flex;
+    flex-direction: row;
+}
+
+.action > .action-title, .action-blurb{
+    flex-direction: column;
+}
+
+.action > button{
+    border-color: white;
+    border: 1px solid;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+button{
+    display: flex;
+    color: #F9FAF8;
     background-color: #3882F6;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{
     color: #F9FAF8;
-    height: 70px;
+    height: 50px;
     display: flex;
     flex: 0 0 auto;
     padding: 15px;
@@ -142,6 +220,7 @@ body{
     flex-direction: column-reverse;
     flex: 0 0 auto;
     flex-grow: 1;
+    padding: 2% 10%;
 }
 
 .square-container{
@@ -153,6 +232,7 @@ body{
     flex-wrap: wrap;
     gap: 2%;
     flex-grow: 3;
+    padding: 2% 10%;
 }
 
 .square > img{
@@ -164,10 +244,23 @@ body{
     border: 3px solid;
     border-radius: 15px;
     border-color:  #3882F6;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .square{
     align-self: center;
+    font-size: 10px;
+    justify-content: center;
+    padding: 2px;
+}
+
+.attributed-to{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding: 8px;
+
 }
