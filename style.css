@@ -3,6 +3,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .header, .content, .footer-container{
@@ -15,14 +16,15 @@ body{
     flex-direction: row;
     justify-content: space-around;
     flex: 0 0 auto;
-    padding: 0 20;
-    align-items: center;
-    padding: 2% 10%;
+    padding: 0% 5%;
 }
 
 .header-title{
     font-size: 24px;
     font-weight: 700;
+    justify-self: flex-start;
+    align-self: flex-start;
+    flex: 0 0 auto;
 }
 
 
@@ -38,7 +40,7 @@ body{
     align-items: flex-start;
     color: #E5E7EB;
     font-size: 14px;
-    padding: 2% 10%;
+    padding: 2% 5%;
 }
 
 .intro-text{
@@ -47,14 +49,13 @@ body{
     font-size: 40px;
     flex-wrap: wrap;
     width: 80%;
-    padding: 8px;
     flex: 1;
     flex-direction: column;
+    padding: 2px;
 }
 
 .intro-text > button{
-    justify-content: flex-start;
-    width: 50%;
+    border: none;
 }
 
 .head-img{
@@ -79,12 +80,24 @@ body{
     flex: 1;
     flex-direction: column;
     width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .link{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.links{
     color: #E5E7EB;
     font-size: 14px;
-    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex: 1;
+    padding-top: 5px;
 }
 
 .container{
@@ -126,7 +139,7 @@ body{
     font-family: "Roboto-light", sans-serif;
     font-style: italic;
     display: flex;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 40px 15px 40px;
     flex-grow: 4;
     flex-direction: column;
 }
@@ -137,6 +150,8 @@ body{
     width: 60%;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 40px;
+    padding-right: 20px;
 }
 
 .container3{
@@ -162,6 +177,7 @@ body{
     border-radius: 9px;
     row-gap: 10px;
     column-gap: 2em;
+    flex: 0 2 auto;
 }
 
 .action-title{
@@ -181,10 +197,6 @@ body{
     flex-direction: row;
 }
 
-.action > .action-title, .action-blurb{
-    flex-direction: column;
-}
-
 .action > button{
     border-color: white;
     border: 1px solid;
@@ -198,11 +210,12 @@ button{
     display: flex;
     color: #F9FAF8;
     background-color: #3882F6;
+    justify-self: flex-start;
     border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
+    padding: 5px 10px;
+    margin: auto 0;
+    width: 70px;
+    text-align: center;
 }
 
 .footer{
@@ -210,7 +223,7 @@ button{
     height: 50px;
     display: flex;
     flex: 0 0 auto;
-    padding: 15px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -220,7 +233,7 @@ button{
     flex-direction: column-reverse;
     flex: 0 0 auto;
     flex-grow: 1;
-    padding: 2% 10%;
+    padding: 0% 10%;
 }
 
 .square-container{
@@ -261,6 +274,7 @@ button{
     display: flex;
     align-self: flex-end;
     justify-content: flex-end;
-    padding: 8px;
+    padding-right: 40px;
+    padding-left: 20px;
 
 }
